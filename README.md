@@ -1,6 +1,7 @@
 # Majestic Motors 2.0
 
 A full-stack online car shop, rebuilt with a modern stack. The original v1 code is preserved in this repository's earlier commits; the API is also published on its own in [tazim5032/majestic-motors-api](https://github.com/tazim5032/majestic-motors-api).
+**Live demo:** https://tazim-majestic-motors.netlify.app (runs fully in your browser; use the demo login buttons, and reset the data from the footer)
 
 **Front end:** React 18, TypeScript, Vite, Tailwind CSS, React Router
 **Back end:** Express, TypeScript, Zod validation, JWT auth, bcrypt; JSON-file database (no setup needed)
