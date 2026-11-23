@@ -1,0 +1,17 @@
+{
+  "name": "majestic-motors",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Majestic Motors: a full-stack car shop with user and admin dashboards, checkout and a simulated SurjoPay payment flow.",
+  "scripts": {
+    "setup": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently -n api,web -c gray,blue \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "typecheck": "npm --prefix server run typecheck && npm --prefix client run typecheck",
+    "reset-data": "npm --prefix server run reset",
+    "build:demo": "npm --prefix client run build:demo"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
